@@ -1,0 +1,7 @@
+{
+  "version": "1.21.1",
+  "mac": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.21.1/Preluud-1.21.1-mac-arm64.zip",
+  "macSize": 129577872,
+  "page": "https://github.com/jeremytamom-lab/preluud/releases/latest",
+  "notes": "Connexion par compte, mises à jour automatiques, fichiers .pre, barre du moodboard réglable, mode épinglé avec la fenêtre principale ouverte."
+}
