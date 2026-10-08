@@ -1,0 +1,37 @@
+# Publie automatiquement une Release quand Claude envoie une nouvelle version de l'app sur la branche « incoming ».
+name: Publier la release
+on:
+  push:
+    branches: [incoming]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: incoming
+      - name: Reconstituer les fichiers et publier
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          V=$(jq -r .version release.json)
+          NOTES=$(jq -r .notes release.json)
+          FILES=""
+          if ls parts/mac.zip.part* >/dev/null 2>&1; then
+            cat parts/mac.zip.part* > "Preluud-$V-mac-arm64.zip"; FILES="$FILES Preluud-$V-mac-arm64.zip"
+          fi
+          if ls parts/win.exe.part* >/dev/null 2>&1; then
+            cat parts/win.exe.part* > "Preluud-Setup-$V.exe"; FILES="$FILES Preluud-Setup-$V.exe"
+          fi
+          if gh release view "v$V" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "v$V" $FILES --clobber --repo "$GITHUB_REPOSITORY"
+          else
+            gh release create "v$V" $FILES --title "Preluud $V" --notes "$NOTES" --target main --repo "$GITHUB_REPOSITORY"
+          fi
+          # anciennes versions à retirer (ex. une version non protégée)
+          for OLD in $(jq -r '.delete // [] | .[]' release.json); do
+            gh release delete "$OLD" --cleanup-tag -y --repo "$GITHUB_REPOSITORY" || true
+          done
