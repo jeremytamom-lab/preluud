@@ -1,9 +1,9 @@
 {
-  "version": "1.22.0",
-  "mac": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.22.0/Preluud-1.22.0-mac-arm64.zip",
-  "macSize": 129728765,
+  "version": "1.24.0",
+  "mac": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.24.0/Preluud-1.24.0-mac-arm64.zip",
+  "macSize": 129777942,
+  "win": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.24.0/Preluud-Setup-1.24.0.exe",
+  "winSize": 111841159,
   "page": "https://github.com/jeremytamom-lab/preluud/releases/latest",
-  "notes": "Journal des nouveautés après chaque mise à jour, vérification des mises à jour dès le lancement, correction de la barre latérale en mode épinglé.",
-  "win": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.22.0/Preluud-Setup-1.22.0.exe",
-  "winSize": 111820931
+  "notes": "Icônes du contenu sous chaque projet, icône Windows plus nette, correction de l'annonce « nouvelle version disponible »."
 }
