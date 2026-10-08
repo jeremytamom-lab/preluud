@@ -1,7 +1,7 @@
 {
-  "version": "1.21.2",
-  "mac": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.21.2/Preluud-1.21.2-mac-arm64.zip",
-  "macSize": 129724585,
+  "version": "1.22.0",
+  "mac": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.22.0/Preluud-1.22.0-mac-arm64.zip",
+  "macSize": 129728765,
   "page": "https://github.com/jeremytamom-lab/preluud/releases/latest",
-  "notes": "Code de l'app protégé (brouillé), barre du moodboard réglable, mode épinglé avec la fenêtre principale ouverte, connexion par compte, mises à jour automatiques."
+  "notes": "Journal des nouveautés après chaque mise à jour, vérification des mises à jour dès le lancement, correction de la barre latérale en mode épinglé."
 }
