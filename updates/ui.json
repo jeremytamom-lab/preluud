@@ -1,7 +1,7 @@
 {
-  "version": "1.21.1",
+  "version": "1.21.2",
   "shellApi": 1,
-  "sha256": "1362d0dc87153351cccb872fe6ecd4435cf160cdd2e38ce47128cb837d9c34b5",
-  "size": 1393563,
-  "sig": "ScpDu4evk53PRF9t4F5Ualgylf8Nj/l9M9dehGq2IOdJHNwqIqu/xgapUzdi7dwZdJW8ZWHvwib9ZN5PXO3PCA=="
+  "sha256": "6ecaf1194e16c02f4e2bc0cc5c5162bc0f1fffa1f89cf1f91d629a7afe679f37",
+  "size": 1586421,
+  "sig": "9HNAglgY2Z/Rcr96RBjpuwELo8g5qCCbEHOzScaNdXwzdnS4870sNK6pFldDP5fpkj1m1sbQWxkUOW1/b0cKAw=="
 }
