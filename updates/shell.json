@@ -1,9 +1,9 @@
 {
-  "version": "1.24.0",
-  "mac": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.24.0/Preluud-1.24.0-mac-arm64.zip",
-  "macSize": 129777942,
-  "win": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.24.0/Preluud-Setup-1.24.0.exe",
-  "winSize": 111841159,
+  "version": "1.27.0",
+  "mac": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.27.0/Preluud-1.27.0-mac-arm64.zip",
+  "macSize": 129877393,
+  "win": "https://github.com/jeremytamom-lab/preluud/releases/download/v1.27.0/Preluud-Setup-1.27.0.exe",
+  "winSize": 111921671,
   "page": "https://github.com/jeremytamom-lab/preluud/releases/latest",
-  "notes": "Icônes du contenu sous chaque projet, icône Windows plus nette, correction de l'annonce « nouvelle version disponible »."
+  "notes": "Vue d'ensemble et dossier client, style Verre, garder un passage de vidéo, capture et enregistrement depuis YouTube/Vimeo, liens dans les Notes, vidéos en boucle dans le storyboard, onglets, animations, et mises à jour Windows plus fiables."
 }
